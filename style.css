@@ -1,0 +1,81 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #0a0a1f, #1a1a3f);
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  background: rgba(20, 40, 60, 0.9);
+  padding: 0.8rem 1.5rem;
+}
+
+nav .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #a0d0a0;
+  letter-spacing: 1px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(10, 20, 30, 0.8);
+}
+
+header h1 {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: #a0d0a0;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+#canvas-container {
+  width: 95vw;
+  max-width: 1000px;
+  aspect-ratio: 16 / 9;
+  border: 2px solid #4a7f4a;
+  box-shadow: 0 0 20px #4a7f4a66;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1rem;
+  background: rgba(10, 20, 30, 0.8);
+  color: #88aa88;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
