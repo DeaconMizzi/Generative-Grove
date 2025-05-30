@@ -2,13 +2,13 @@ let trees = [];
 let fireflies = [];
 let leaves = [];
 let windFactor = 1;
-let weatherCondition = "Clear"; // Default
-let timeOfDay = 0; // Simulated time (0 to 1: day to night)
+let weatherCondition = "Clear"; 
+let timeOfDay = 0;
 let apiKey = "db4333d472a55f17a1eff793bbc23e16";
 let city = "Valletta,MT";
 
 function setup() {
-  let canvas = createCanvas(960, 540);
+  let canvas = createCanvas(960, 400); 
   canvas.parent('canvas-container');
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   loadJSON(url, gotWeather);
